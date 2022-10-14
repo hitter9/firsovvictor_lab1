@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: no-repeat url(porsche.png);
+    background-size: 40% 70%;
+    background-attachment: fixed;
+    background-position: center;
+    width: 75%;
+    padding-left: 12.5%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 10px;
+    grid-template-areas: 
+        "head1 head1"
+        "par par"
+        "head3 head3"
+        "gen1 gen1im"
+        "gen1r gen1rim"
+        "gen2 gen2im"
+        "gen2r gen2rim"
+        "gen3 gen3im"
+        "gen3c gen3cim"
+        "rep rep"
+        "fir ibr";
+}
+h1 {
+    grid-area: head1;
+    padding: 10px;
+    background-color: rgb(255, 255, 125);
+    text-align: center;
+}
+h2 {
+    grid-area: rep;
+    font-size: 20px;
+    text-align: center;
+}
+p {
+    grid-area: par;
+    padding: 10px;
+    background-color: rgb(252, 252, 132);
+}
+h3 {
+    grid-area: head3;
+    padding: 10px;
+    background-color: rgb(252, 252, 132);
+    text-align: center;
+}
+h4 {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(252, 252, 132);
+    text-align: center;
+    align-self: center;
+}
+img {
+    width: 100%;
+}
+#gen1 {
+    grid-area: gen1;
+}
+#gen1im {
+    grid-area: gen1im;
+}
+#gen1r {
+    grid-area: gen1r;
+}
+#gen1rim {
+    grid-area: gen1rim;
+}
+#gen2 {
+    grid-area: gen2;
+}
+#gen2im {
+    grid-area: gen2im;
+}
+#gen2r {
+    grid-area: gen2r;
+}
+#gen2rim {
+    grid-area: gen2rim;
+}
+#gen3 {
+    grid-area: gen3;
+}
+#gen3im {
+    grid-area: gen3im;
+}
+#gen3c {
+    grid-area: gen3c;
+}
+#gen3cim {
+    grid-area: gen3cim;
+}
+#firsov {
+    grid-area: fir;
+}
+#ibragimov {
+    grid-area: ibr;
+}

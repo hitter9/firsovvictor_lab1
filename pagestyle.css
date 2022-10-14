@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: no-repeat url(porsche.png);
+    background-size: 40% 70%;
+    background-attachment: fixed;
+    background-position: center;
+    width: 75%;
+    padding-left: 12.5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "head head"
+    "disc disc"
+    "imag imag"
+    ". nav";
+}
+h1 {
+    grid-area: head;
+    padding: 10px;
+    background-color: rgb(255, 255, 125);
+    text-align: center;
+}
+p {
+    grid-area: disc;
+    padding: 10px;
+    background-color: rgb(255, 255, 125);
+    text-align: center;
+}
+img {
+    grid-area: imag;
+    width: 200%;
+}
+h3 {
+    grid-area: nav;
+    padding: 10px;
+    background-color: rgb(255, 255, 125);
+    justify-self: right;
+}
